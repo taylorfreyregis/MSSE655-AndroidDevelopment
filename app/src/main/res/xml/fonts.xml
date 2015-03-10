@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- Taken from: http://blog.innovattic.com/integrating-fonts-in-android/ -->
+    <!-- Project Source code: https://github.com/Innovattic/Android-Font-Integration -->
+
+<familyset>
+
+    <family>
+        <nameset>
+            <name>lato</name>
+        </nameset>
+        <fileset>
+            <file>Lato.ttf</file>
+            <!--<file>Lato-Italic.ttf</file>-->
+            <!--<file>Lato-Light.ttf</file>-->
+            <!--<file>Lato-LightItalic.ttf</file>-->
+            <!--<file>Lato-Regular.ttf</file>-->
+            <!--<file>Lato-Thin.ttf</file>-->
+            <!--<file>Lato-ThinItalic.ttf</file>-->
+        </fileset>
+    </family>
+</familyset>

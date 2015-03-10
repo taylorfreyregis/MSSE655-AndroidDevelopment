@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taylorcfrey.workouttracker" >
+
+    <!-- WRITE permission implicitly includes READ permission -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.WorkoutTrackerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_wot_logo"
+        android:label="@string/app_name"
+        android:theme="@style/WorkoutTrackerTheme" >
+        <activity
+            android:name=".main_navigation.MainNavigationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".routine.RoutineListActivity"
+            android:label="@string/title_routine_list"
+            android:parentActivityName=".main_navigation.MainNavigationActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcfrey.workouttracker.activities.MainNavigationActivity" />
+        </activity>
+        <activity
+            android:name=".routine.RoutineDetailActivity"
+            android:label="@string/title_routine_detail"
+            android:parentActivityName=".routine.RoutineListActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcfrey.workouttracker.activities.RoutineListActivity" />
+        </activity>
+        <activity
+            android:name=".exercise.ExerciseActivity"
+            android:label="@string/title_activity_exercise"
+            android:parentActivityName=".routine.RoutineListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcfrey.workouttracker.routine.RoutineListActivity" />
+        </activity>
+        <activity
+            android:name=".record.RecordActivity"
+            android:label="@string/title_activity_result"
+            android:parentActivityName=".main_navigation.MainNavigationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcfrey.workouttracker.main_navigation.MainNavigationActivity" />
+        </activity>
+    </application>
+
+</manifest>

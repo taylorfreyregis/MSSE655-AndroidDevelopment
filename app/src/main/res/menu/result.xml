@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.taylorcfrey.workouttracker.record.RecordActivity" >
+    <item android:id="@+id/action_new_result"
+        android:title="@string/track_new_result"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_new_record"
+          android:title="@string/new_record"
+          android:orderInCategory="101"
+          android:showAsAction="never" />
+</menu>

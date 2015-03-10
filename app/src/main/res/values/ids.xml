@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Necessary for the custom font loading implementation -->
+    <item type="id" name="fonts_extra_data" />
+</resources>

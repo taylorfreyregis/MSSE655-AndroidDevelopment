@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taylorcfrey.workouttracker.exercise.CreateExerciseFragment"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/create_exercise_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:hint="@string/create_exercise_name"
+
+        android:gravity="center"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/create_exercise_aerobic_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/RadioButton"
+
+            android:checked="true"
+
+            android:text="@string/aerobic"/>
+        <RadioButton
+            android:id="@+id/create_exercise_anaerobic_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/RadioButton"
+
+            android:text="@string/anaerobic" />
+        </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:padding="5dp"
+
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Include Countdown Timer"
+            android:textSize="20sp"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton
+            android:id="@+id/create_exercise_include_timer_togglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textOff="No"
+            android:textOn="Yes"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:padding="5dp"
+
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Include Stopwatch"
+            android:textSize="20sp"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton
+            android:id="@+id/create_exercise_include_stopwatch_togglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textOff="No"
+            android:textOn="Yes"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:background="@android:color/transparent"
+
+        android:text="Save Exercise"
+        android:textColor="@android:color/holo_blue_light"/>
+
+
+</LinearLayout>

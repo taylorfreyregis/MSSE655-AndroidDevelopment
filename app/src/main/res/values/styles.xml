@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- Custom theme -->
+    <style name="WorkoutTrackerTheme" parent="android:Theme.Holo">
+
+        <!-- ActionBar -->
+        <item name="android:actionBarStyle">@style/WorkoutTracker.ActionBar</item>
+        <!-- Menus -->
+        <item name="android:popupMenuStyle">@style/WorkoutTracker.PopupMenu</item>
+        <item name="android:textColorPrimary">@color/Purple</item>
+
+        <!-- Base theme components -->
+        <item name="android:windowBackground">@color/AndroidStudioBackgroundGray</item>
+
+        <!-- Attempt at loading a custom font across the application -->
+        <item name="android:textViewStyle">@style/WorkoutTrackerTextViewStyle</item>
+        <item name="android:textAppearance">@style/LatoTextAppearance</item>
+
+    </style>
+
+    <style name="WorkoutTracker.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/Orange</item>
+    </style>
+
+    <style name="WorkoutTracker.PopupMenu" parent="android:Widget.Holo.Light.PopupMenu">
+        <item name="android:popupBackground">@color/Taupe</item>
+    </style>
+
+    <!-- Navigation Drawer -->
+    <style name="NavigationDrawer">
+        <item name="android:background">@color/Taupe</item>
+        <item name="android:divider">@color/DarkCyan</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- Radio Button -->
+    <style name="RadioButton">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/holo_blue_dark</item>
+    </style>
+
+    <!-- Attempt at loading a custom font across TextViews -->
+    <style name="WorkoutTrackerTextViewStyle" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textAppearance">@style/LatoTextAppearance</item>
+
+    </style>
+
+    <!-- Attempt at loading a custom font -->
+    <style name="LatoTextAppearance" parent="@android:style/TextAppearance.Holo">
+        <item name="font">lato</item>
+    </style>
+</resources>

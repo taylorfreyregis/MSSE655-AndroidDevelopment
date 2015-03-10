@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Allows the ability to specific a custom font as an attribute -->
+    <declare-styleable name="Fonts">
+        <attr name="font" format="string" />
+        <attr name="android:textStyle" />
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+    </declare-styleable>
+
+
+</resources> 
